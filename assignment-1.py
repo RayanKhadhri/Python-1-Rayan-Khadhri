@@ -46,6 +46,5 @@ prep = float(input("Enter grade for Midterms and Final Preperation: "))
 def prepgrade(prep:float) -> float:
      return (prep * 0.06)
 grade += prepgrade(prep)
-round(grade)
 
-print("Your grade is: " + str(grade))
+print("Your grade is: " + str(round(grade, 2)))
