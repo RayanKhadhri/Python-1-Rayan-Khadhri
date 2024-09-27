@@ -2,7 +2,7 @@ grade = 0
 # This section is for calculating the grade for labs
 labs = int(input("Enter the number of labs completed: "))
 if labs > 6:
-labs = 6
+    labs = 6
 if labs < 0:
      labs = 0
 def labgrade(labs:int) -> float :
@@ -41,12 +41,11 @@ def finalgrade(final:float) -> float:
      return (final * 0.18)
 grade += finalgrade(final)
 
-# This section is for calculating the grade for the final and midterm prep
+# This section is for calculating the grae for the final and midterm prep
 prep = float(input("Enter grade for Midterms and Final Preperation: "))
 def prepgrade(prep:float) -> float:
      return (prep * 0.06)
 grade += prepgrade(prep)
 round(grade)
 
-print("Your grade is: " + str(grade)) 
-
+print("Your grade is: " + str(grade))
